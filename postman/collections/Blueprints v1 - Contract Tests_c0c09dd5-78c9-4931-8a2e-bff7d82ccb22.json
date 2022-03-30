@@ -1,6 +1,6 @@
 {
     "info": {
-        "_postman_id": "abe042ee-11ef-418a-8da4-398d8079e0a0",
+        "_postman_id": "7043e1de-ed8a-473e-9482-48f03cea89ea",
         "name": "Blueprints v1 - Contract Tests",
         "description": "This is of the blueprints API.",
         "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -22,7 +22,7 @@
                     }
                 }
             ],
-            "id": "eb4aef79-b462-4709-9d90-8beb757daffb",
+            "id": "cb7cf4ed-b9cd-4511-a2d7-350169dc1c73",
             "request": {
                 "method": "GET",
                 "header": [
@@ -70,7 +70,7 @@
                     }
                 }
             ],
-            "id": "98eff59e-b07b-42b6-99d6-0fbde33b4eff",
+            "id": "8776ed88-f86a-4ee2-961e-4a601a2658f5",
             "protocolProfileBehavior": {
                 "disableBodyPruning": true
             },
@@ -124,7 +124,7 @@
                     }
                 }
             ],
-            "id": "82997779-5879-45c9-95c8-fe826b492a8c",
+            "id": "55e9c65d-6df8-4f8a-8976-ffc175cd94dc",
             "request": {
                 "method": "GET",
                 "header": [
@@ -144,6 +144,7 @@
                     ],
                     "variable": [
                         {
+                            "id": "51f2f5ab-81d3-418f-bb26-07f300442ecc",
                             "key": "blueprint_id",
                             "value": "22",
                             "description": "(Required) "
@@ -169,7 +170,7 @@
                     }
                 }
             ],
-            "id": "166e0eeb-32b2-4608-86bf-1c6e601ac751",
+            "id": "e9e74d35-8963-4a0d-bb14-ffa5bdbd5af5",
             "protocolProfileBehavior": {
                 "disableBodyPruning": true
             },
@@ -201,6 +202,7 @@
                     ],
                     "variable": [
                         {
+                            "id": "b57c728a-b7f2-4a4f-aa80-06c8fed0c849",
                             "key": "blueprint_id",
                             "value": "22",
                             "description": "(Required) "
@@ -226,7 +228,7 @@
                     }
                 }
             ],
-            "id": "d6f65459-ec70-4ca8-8c31-5253dce69bae",
+            "id": "3459aae3-213b-4f41-9df0-1c80e993743c",
             "request": {
                 "method": "DELETE",
                 "header": [],
@@ -241,6 +243,7 @@
                     ],
                     "variable": [
                         {
+                            "id": "c5df41ef-ad8b-4ab1-9260-e211f91d50a7",
                             "key": "blueprint_id",
                             "value": "22",
                             "description": "(Required) "

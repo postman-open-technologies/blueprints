@@ -1,6 +1,6 @@
 {
     "info": {
-        "_postman_id": "9980114a-1bf8-4287-a695-212deb0601a6",
+        "_postman_id": "5ac1d3c6-0a38-4acb-95fd-fe182d6c0e71",
         "name": "Blueprints v1 - Performance",
         "description": "This is of the blueprints API.",
         "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -22,7 +22,7 @@
                     }
                 }
             ],
-            "id": "c63f403b-d214-46d5-a2da-c85a0509eca2",
+            "id": "bb8f2bfa-8a06-40ca-9738-0ae5f206be52",
             "request": {
                 "auth": {
                     "type": "apikey",

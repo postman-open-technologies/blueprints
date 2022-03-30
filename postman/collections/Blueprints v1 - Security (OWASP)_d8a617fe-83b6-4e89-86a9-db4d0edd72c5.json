@@ -1,6 +1,6 @@
 {
     "info": {
-        "_postman_id": "5dd4d78f-eb05-4235-90e2-e954c7fbdd12",
+        "_postman_id": "6aca0336-08d6-4695-8c88-de169743433b",
         "name": "Blueprints v1 - Security (OWASP)",
         "description": "This is an API for managing the reviews of the restaurant.",
         "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -22,7 +22,7 @@
                     }
                 }
             ],
-            "id": "41106dab-82a5-4b01-a561-05b10454ef6d",
+            "id": "86c25be6-ff1d-4558-8fa0-3802246dc3ca",
             "protocolProfileBehavior": {
                 "disableBodyPruning": true
             },
@@ -67,7 +67,7 @@
                     }
                 }
             ],
-            "id": "82894e97-0e56-47d5-9ca5-9a82f610aee0",
+            "id": "cc9981dc-1650-4a62-b69e-4a5746733baf",
             "protocolProfileBehavior": {
                 "disableBodyPruning": true
             },
@@ -112,7 +112,7 @@
                     }
                 }
             ],
-            "id": "6819ee4e-ee84-4879-a119-022e907b8b82",
+            "id": "977d533f-1383-466e-b779-d7a11d6964c9",
             "protocolProfileBehavior": {
                 "disableBodyPruning": true
             },
@@ -157,7 +157,7 @@
                     }
                 }
             ],
-            "id": "b2d83557-b2b0-45fe-ba59-051445ca64e8",
+            "id": "77ac460a-0f8d-43a1-88de-df3498e85d91",
             "protocolProfileBehavior": {
                 "disableBodyPruning": true
             },
@@ -202,7 +202,7 @@
                     }
                 }
             ],
-            "id": "f4b33c2b-47b0-4bfc-a24e-52e51e94b9c4",
+            "id": "23565d21-ad1b-4dba-9122-c9b79895844d",
             "protocolProfileBehavior": {
                 "disableBodyPruning": true
             },
@@ -247,7 +247,7 @@
                     }
                 }
             ],
-            "id": "262274a3-28e1-4b78-8788-8afd37aefaa7",
+            "id": "4d1e6b11-311f-4742-a399-f666480440b0",
             "protocolProfileBehavior": {
                 "disableBodyPruning": true
             },
@@ -292,7 +292,7 @@
                     }
                 }
             ],
-            "id": "39b4a856-6bbc-4228-8677-b456fbbe2fdf",
+            "id": "0b158ffb-c1a9-4341-854c-34fc88febed0",
             "protocolProfileBehavior": {
                 "disableBodyPruning": true
             },
@@ -337,7 +337,7 @@
                     }
                 }
             ],
-            "id": "5a5a0be6-08b3-4ada-9ba1-9235fd65c247",
+            "id": "514b60ed-ba2c-4d86-a7dc-43842d637647",
             "protocolProfileBehavior": {
                 "disableBodyPruning": true
             },
@@ -382,7 +382,7 @@
                     }
                 }
             ],
-            "id": "d0842ca4-bc26-46b9-83a7-3e1c6b939ea6",
+            "id": "c1b28f4c-9ecf-433d-b3d1-dcfc4bd88b9b",
             "protocolProfileBehavior": {
                 "disableBodyPruning": true
             },
@@ -427,7 +427,7 @@
                     }
                 }
             ],
-            "id": "29a70d02-b282-42fb-9b6c-d01462d07ef7",
+            "id": "d594f4ee-8c36-47e9-a892-72c47fe90aaa",
             "protocolProfileBehavior": {
                 "disableBodyPruning": true
             },
