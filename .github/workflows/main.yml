@@ -419,3 +419,10 @@ jobs:
           aws_region: us-east-1
           function_name: blueprints-s-blueprints-b_id-questions-q_id-delete
           zip_file: blueprints-b_id-questions-q_id-delete.zip                                                                 
+
+      - uses: actions/checkout@master
+      - uses: matt-ball/newman-action@master
+        with:
+          apiKey: ${{ secrets.postmanApiKey }}
+          collection: 12959542-7043e1de-ed8a-473e-9482-48f03cea89ea
+          environment: 12959542-0d1a98dd-aced-429f-a3e0-5cb3113feef2
