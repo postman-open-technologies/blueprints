@@ -1,2 +1,2 @@
-# blueprints
-This is an API for managing blueprints that can be used across the API lifecycle.
+# Blueprints
+This is an API for managing API platform blueprints, helping guide producers and consumers in their API journey.
