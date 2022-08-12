@@ -31,7 +31,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-blueprints-g
             zip_file: m-s-blueprints-g.zip
       - name: /blueprints post lambda deploy zip
@@ -43,7 +43,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-m-s-blueprint-po
             zip_file: m-s-m-s-blueprint-po.zip
       - name: /blueprints/{blueprint_id} get lambda deploy zip
@@ -55,7 +55,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-blueprints-blueprint-g
             zip_file: m-s-blueprints-blueprint-g.zip
       - name: /blueprints/{blueprint_id} put lambda deploy zip
@@ -67,7 +67,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-m-s-blueprints-blueprint-g-pu
             zip_file: m-s-m-s-blueprints-blueprint-g-pu.zip
       - name: /blueprints/{blueprint_id} delete lambda deploy zip
@@ -79,7 +79,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-m-s-m-s-blueprints-blueprint-g-pu-d
             zip_file: m-s-m-s-m-s-blueprints-blueprint-g-pu-d.zip
       - name: /blueprints/{blueprint_id}/answers get lambda deploy zip
@@ -91,7 +91,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-blueprints-blueprint-answer-g
             zip_file: m-s-blueprints-blueprint-answer-g.zip
       - name: /blueprints/{blueprint_id}/answers post lambda deploy zip
@@ -103,7 +103,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-m-s-blueprints-blueprint-answer-g-po
             zip_file: m-s-m-s-blueprints-blueprint-answer-g-po.zip
       - name: /blueprints/{blueprint_id}/answers/{answer_id} delete lambda deploy zip
@@ -115,7 +115,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-blueprints-blueprint-answers-answer-d
             zip_file: m-s-blueprints-blueprint-answers-answer-d.zip
       - name: /blueprints/{blueprint_id}/areas get lambda deploy zip
@@ -127,7 +127,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-blueprints-blueprint-area-g
             zip_file: m-s-blueprints-blueprint-area-g.zip
       - name: /blueprints/{blueprint_id}/areas post lambda deploy zip
@@ -139,7 +139,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-m-s-blueprints-blueprint-area-g-po
             zip_file: m-s-m-s-blueprints-blueprint-area-g-po.zip
       - name: /blueprints/{blueprint_id}/areas/{area_id} put lambda deploy zip
@@ -151,7 +151,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-blueprints-blueprint-areas-area-pu
             zip_file: m-s-blueprints-blueprint-areas-area-pu.zip
       - name: /blueprints/{blueprint_id}/areas/{area_id} delete lambda deploy zip
@@ -163,7 +163,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-m-s-blueprints-blueprint-areas-area-pu-d
             zip_file: m-s-m-s-blueprints-blueprint-areas-area-pu-d.zip
       - name: /blueprints/{blueprint_id}/areas/{area_id}/elements get lambda deploy zip
@@ -175,7 +175,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-blueprints-blueprint-areas-area-element-g
             zip_file: m-s-blueprints-blueprint-areas-area-element-g.zip
       - name: /blueprints/{blueprint_id}/areas/{area_id}/elements post lambda deploy zip
@@ -187,7 +187,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-m-s-blueprints-blueprint-areas-area-element-g-po
             zip_file: m-s-m-s-blueprints-blueprint-areas-area-element-g-po.zip
       - name: /blueprints/{blueprint_id}/areas/{area_id}/elements/{element_id} delete lambda deploy zip
@@ -199,7 +199,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-blueprints-blueprint-areas-area-elements-element-d
             zip_file: m-s-blueprints-blueprint-areas-area-elements-element-d.zip
       - name: /blueprints/{blueprint_id}/links get lambda deploy zip
@@ -211,7 +211,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-blueprints-blueprint-link-g
             zip_file: m-s-blueprints-blueprint-link-g.zip
       - name: /blueprints/{blueprint_id}/links post lambda deploy zip
@@ -223,7 +223,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-m-s-blueprints-blueprint-link-g-po
             zip_file: m-s-m-s-blueprints-blueprint-link-g-po.zip
       - name: /blueprints/{blueprint_id}/links/{link_id} delete lambda deploy zip
@@ -235,7 +235,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-blueprints-blueprint-links-link-d
             zip_file: m-s-blueprints-blueprint-links-link-d.zip
       - name: /blueprints/{blueprint_id}/questions get lambda deploy zip
@@ -247,7 +247,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-blueprints-blueprint-question-g
             zip_file: m-s-blueprints-blueprint-question-g.zip
       - name: /blueprints/{blueprint_id}/questions post lambda deploy zip
@@ -259,7 +259,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-m-s-blueprints-blueprint-question-g-po
             zip_file: m-s-m-s-blueprints-blueprint-question-g-po.zip
       - name: /blueprints/{blueprint_id}/questions/{question_id} delete lambda deploy zip
@@ -271,7 +271,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-blueprints-blueprint-questions-question-d
             zip_file: m-s-blueprints-blueprint-questions-question-d.zip
       - name: /blueprints/{blueprint_id}/roles get lambda deploy zip
@@ -283,7 +283,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-blueprints-blueprint-role-g
             zip_file: m-s-blueprints-blueprint-role-g.zip
       - name: /blueprints/{blueprint_id}/roles post lambda deploy zip
@@ -295,7 +295,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-m-s-blueprints-blueprint-role-g-po
             zip_file: m-s-m-s-blueprints-blueprint-role-g-po.zip
       - name: /blueprints/{blueprint_id}/roles/{role_id} delete lambda deploy zip
@@ -307,7 +307,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-blueprints-blueprint-roles-role-d
             zip_file: m-s-blueprints-blueprint-roles-role-d.zip
       - name: /blueprints/{blueprint_id}/tags get lambda deploy zip
@@ -319,7 +319,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-blueprints-blueprint-tag-g
             zip_file: m-s-blueprints-blueprint-tag-g.zip
       - name: /blueprints/{blueprint_id}/tags post lambda deploy zip
@@ -331,7 +331,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-m-s-blueprints-blueprint-tag-g-po
             zip_file: m-s-m-s-blueprints-blueprint-tag-g-po.zip
       - name: /blueprints/{blueprint_id}/tags/{tag_id} delete lambda deploy zip
@@ -343,7 +343,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-blueprints-blueprint-tags-tag-d
             zip_file: m-s-blueprints-blueprint-tags-tag-d.zip
       - name: /blueprints/{blueprint_id}/videos get lambda deploy zip
@@ -355,7 +355,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-blueprints-blueprint-video-g
             zip_file: m-s-blueprints-blueprint-video-g.zip
       - name: /blueprints/{blueprint_id}/videos post lambda deploy zip
@@ -367,7 +367,7 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-m-s-blueprints-blueprint-video-g-po
             zip_file: m-s-m-s-blueprints-blueprint-video-g-po.zip
       - name: /blueprints/{blueprint_id}/videos/{video_id} delete lambda deploy zip
@@ -379,6 +379,6 @@ jobs:
         with:
             aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
             aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-            aws_region: us-east-1
+            aws_region: us-west-1
             function_name: m-s-blueprints-blueprint-videos-video-d
             zip_file: m-s-blueprints-blueprint-videos-video-d.zip
