@@ -29,8 +29,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-blueprints-g
             zip_file: m-s-blueprints-g.zip
@@ -41,8 +41,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-m-s-blueprint-po
             zip_file: m-s-m-s-blueprint-po.zip
@@ -53,8 +53,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-blueprints-blueprint-g
             zip_file: m-s-blueprints-blueprint-g.zip
@@ -65,8 +65,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-m-s-blueprints-blueprint-g-pu
             zip_file: m-s-m-s-blueprints-blueprint-g-pu.zip
@@ -77,8 +77,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-m-s-m-s-blueprints-blueprint-g-pu-d
             zip_file: m-s-m-s-m-s-blueprints-blueprint-g-pu-d.zip
@@ -89,8 +89,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-blueprints-blueprint-answer-g
             zip_file: m-s-blueprints-blueprint-answer-g.zip
@@ -101,8 +101,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-m-s-blueprints-blueprint-answer-g-po
             zip_file: m-s-m-s-blueprints-blueprint-answer-g-po.zip
@@ -113,8 +113,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-blueprints-blueprint-answers-answer-d
             zip_file: m-s-blueprints-blueprint-answers-answer-d.zip
@@ -125,8 +125,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-blueprints-blueprint-area-g
             zip_file: m-s-blueprints-blueprint-area-g.zip
@@ -137,8 +137,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-m-s-blueprints-blueprint-area-g-po
             zip_file: m-s-m-s-blueprints-blueprint-area-g-po.zip
@@ -149,8 +149,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-blueprints-blueprint-areas-area-pu
             zip_file: m-s-blueprints-blueprint-areas-area-pu.zip
@@ -161,8 +161,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-m-s-blueprints-blueprint-areas-area-pu-d
             zip_file: m-s-m-s-blueprints-blueprint-areas-area-pu-d.zip
@@ -173,8 +173,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-blueprints-blueprint-areas-area-element-g
             zip_file: m-s-blueprints-blueprint-areas-area-element-g.zip
@@ -185,8 +185,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-m-s-blueprints-blueprint-areas-area-element-g-po
             zip_file: m-s-m-s-blueprints-blueprint-areas-area-element-g-po.zip
@@ -197,8 +197,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-blueprints-blueprint-areas-area-elements-element-d
             zip_file: m-s-blueprints-blueprint-areas-area-elements-element-d.zip
@@ -209,8 +209,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-blueprints-blueprint-link-g
             zip_file: m-s-blueprints-blueprint-link-g.zip
@@ -221,8 +221,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-m-s-blueprints-blueprint-link-g-po
             zip_file: m-s-m-s-blueprints-blueprint-link-g-po.zip
@@ -233,8 +233,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-blueprints-blueprint-links-link-d
             zip_file: m-s-blueprints-blueprint-links-link-d.zip
@@ -245,8 +245,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-blueprints-blueprint-question-g
             zip_file: m-s-blueprints-blueprint-question-g.zip
@@ -257,8 +257,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-m-s-blueprints-blueprint-question-g-po
             zip_file: m-s-m-s-blueprints-blueprint-question-g-po.zip
@@ -269,8 +269,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-blueprints-blueprint-questions-question-d
             zip_file: m-s-blueprints-blueprint-questions-question-d.zip
@@ -281,8 +281,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-blueprints-blueprint-role-g
             zip_file: m-s-blueprints-blueprint-role-g.zip
@@ -293,8 +293,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-m-s-blueprints-blueprint-role-g-po
             zip_file: m-s-m-s-blueprints-blueprint-role-g-po.zip
@@ -305,8 +305,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-blueprints-blueprint-roles-role-d
             zip_file: m-s-blueprints-blueprint-roles-role-d.zip
@@ -317,8 +317,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-blueprints-blueprint-tag-g
             zip_file: m-s-blueprints-blueprint-tag-g.zip
@@ -329,8 +329,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-m-s-blueprints-blueprint-tag-g-po
             zip_file: m-s-m-s-blueprints-blueprint-tag-g-po.zip
@@ -341,8 +341,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-blueprints-blueprint-tags-tag-d
             zip_file: m-s-blueprints-blueprint-tags-tag-d.zip
@@ -353,8 +353,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-blueprints-blueprint-video-g
             zip_file: m-s-blueprints-blueprint-video-g.zip
@@ -365,8 +365,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-m-s-blueprints-blueprint-video-g-po
             zip_file: m-s-m-s-blueprints-blueprint-video-g-po.zip
@@ -377,8 +377,8 @@ jobs:
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
-            aws_access_key_id: $ secrets.AWS_ACCESS_KEY_ID
-            aws_secret_access_key: $ secrets.AWS_SECRET_ACCESS_KEY
+            aws_access_key_id: ${secrets.AWS_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws_region: us-east-1
             function_name: m-s-blueprints-blueprint-videos-video-d
             zip_file: m-s-blueprints-blueprint-videos-video-d.zip
