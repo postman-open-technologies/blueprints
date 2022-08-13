@@ -56,32 +56,32 @@ jobs:
             aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
             aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             aws_region: us-west-1
-            function_name: m-s-blueprints-blueprint-g
-            zip_file: m-s-blueprints-blueprint-g.zip
+            function_name: m-s-blueprints-blueprint-put
+            zip_file: m-s-blueprints-blueprint-put.zip
       - name: /blueprints/{blueprint_id} put lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-g.zip /blueprints/blueprint_id/put/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-pu.zip /blueprints/blueprint_id/put/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
             aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
             aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             aws_region: us-west-1
-            function_name: m-s-blueprints-blueprint-g
-            zip_file: m-s-blueprints-blueprint-g.zip
+            function_name: m-s-blueprints-blueprint-pu
+            zip_file: m-s-blueprints-blueprint-pu.zip
       - name: /blueprints/{blueprint_id} delete lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-m-s-blueprints-blueprint-g-d.zip /blueprints/blueprint_id/delete/index.js node_modules
+            args: zip -qq -r m-s-m-s-blueprints-blueprint-d.zip /blueprints/blueprint_id/delete/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
             aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
             aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             aws_region: us-west-1
-            function_name: m-s-m-s-blueprints-blueprint-g-d
-            zip_file: m-s-m-s-blueprints-blueprint-g-d.zip
+            function_name: m-s-m-s-blueprints-blueprint-d
+            zip_file: m-s-m-s-blueprints-blueprint-d.zip
       - name: /blueprints/{blueprint_id}/answers get lambda deploy zip
         uses: kinlane/blueprints@main
         with:
@@ -97,15 +97,15 @@ jobs:
       - name: /blueprints/{blueprint_id}/answers post lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-answer-g-po.zip /blueprints/blueprint_id/answers/post/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-answer-po.zip /blueprints/blueprint_id/answers/post/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
             aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
             aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             aws_region: us-west-1
-            function_name: m-s-blueprints-blueprint-answer-g-po
-            zip_file: m-s-blueprints-blueprint-answer-g-po.zip
+            function_name: m-s-blueprints-blueprint-answer-po
+            zip_file: m-s-blueprints-blueprint-answer-po.zip
       - name: /blueprints/{blueprint_id}/answers/{answer_id} delete lambda deploy zip
         uses: kinlane/blueprints@main
         with:
@@ -133,15 +133,15 @@ jobs:
       - name: /blueprints/{blueprint_id}/areas post lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-area-g-po.zip /blueprints/blueprint_id/areas/post/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-area-po.zip /blueprints/blueprint_id/areas/post/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
             aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
             aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             aws_region: us-west-1
-            function_name: m-s-blueprints-blueprint-area-g-po
-            zip_file: m-s-blueprints-blueprint-area-g-po.zip
+            function_name: m-s-blueprints-blueprint-area-po
+            zip_file: m-s-blueprints-blueprint-area-po.zip
       - name: /blueprints/{blueprint_id}/areas/{area_id} put lambda deploy zip
         uses: kinlane/blueprints@main
         with:
@@ -181,15 +181,15 @@ jobs:
       - name: /blueprints/{blueprint_id}/areas/{area_id}/elements post lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-areas-area-element-g-po.zip /blueprints/blueprint_id/areas/area_id/elements/post/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-areas-area-element-po.zip /blueprints/blueprint_id/areas/area_id/elements/post/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
             aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
             aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             aws_region: us-west-1
-            function_name: m-s-blueprints-blueprint-areas-area-element-g-po
-            zip_file: m-s-blueprints-blueprint-areas-area-element-g-po.zip
+            function_name: m-s-blueprints-blueprint-areas-area-element-po
+            zip_file: m-s-blueprints-blueprint-areas-area-element-po.zip
       - name: /blueprints/{blueprint_id}/areas/{area_id}/elements/{element_id} delete lambda deploy zip
         uses: kinlane/blueprints@main
         with:
@@ -217,15 +217,15 @@ jobs:
       - name: /blueprints/{blueprint_id}/links post lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-link-g-po.zip /blueprints/blueprint_id/links/post/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-link-po.zip /blueprints/blueprint_id/links/post/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
             aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
             aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             aws_region: us-west-1
-            function_name: m-s-blueprints-blueprint-link-g-po
-            zip_file: m-s-blueprints-blueprint-link-g-po.zip
+            function_name: m-s-blueprints-blueprint-link-po
+            zip_file: m-s-blueprints-blueprint-link-po.zip
       - name: /blueprints/{blueprint_id}/links/{link_id} delete lambda deploy zip
         uses: kinlane/blueprints@main
         with:
@@ -253,15 +253,15 @@ jobs:
       - name: /blueprints/{blueprint_id}/questions post lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-question-g-po.zip /blueprints/blueprint_id/questions/post/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-question-po.zip /blueprints/blueprint_id/questions/post/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
             aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
             aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             aws_region: us-west-1
-            function_name: m-s-blueprints-blueprint-question-g-po
-            zip_file: m-s-blueprints-blueprint-question-g-po.zip
+            function_name: m-s-blueprints-blueprint-question-po
+            zip_file: m-s-blueprints-blueprint-question-po.zip
       - name: /blueprints/{blueprint_id}/questions/{question_id} delete lambda deploy zip
         uses: kinlane/blueprints@main
         with:
@@ -289,15 +289,15 @@ jobs:
       - name: /blueprints/{blueprint_id}/roles post lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-role-g-po.zip /blueprints/blueprint_id/roles/post/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-role-po.zip /blueprints/blueprint_id/roles/post/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
             aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
             aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             aws_region: us-west-1
-            function_name: m-s-blueprints-blueprint-role-g-po
-            zip_file: m-s-blueprints-blueprint-role-g-po.zip
+            function_name: m-s-blueprints-blueprint-role-po
+            zip_file: m-s-blueprints-blueprint-role-po.zip
       - name: /blueprints/{blueprint_id}/roles/{role_id} delete lambda deploy zip
         uses: kinlane/blueprints@main
         with:
@@ -325,15 +325,15 @@ jobs:
       - name: /blueprints/{blueprint_id}/tags post lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-tag-g-po.zip /blueprints/blueprint_id/tags/post/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-tag-po.zip /blueprints/blueprint_id/tags/post/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
             aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
             aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             aws_region: us-west-1
-            function_name: m-s-blueprints-blueprint-tag-g-po
-            zip_file: m-s-blueprints-blueprint-tag-g-po.zip
+            function_name: m-s-blueprints-blueprint-tag-po
+            zip_file: m-s-blueprints-blueprint-tag-po.zip
       - name: /blueprints/{blueprint_id}/tags/{tag_id} delete lambda deploy zip
         uses: kinlane/blueprints@main
         with:
@@ -361,15 +361,15 @@ jobs:
       - name: /blueprints/{blueprint_id}/videos post lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-video-g-po.zip /blueprints/blueprint_id/videos/post/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-video-po.zip /blueprints/blueprint_id/videos/post/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
             aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
             aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             aws_region: us-west-1
-            function_name: m-s-blueprints-blueprint-video-g-po
-            zip_file: m-s-blueprints-blueprint-video-g-po.zip
+            function_name: m-s-blueprints-blueprint-video-po
+            zip_file: m-s-blueprints-blueprint-video-po.zip
       - name: /blueprints/{blueprint_id}/videos/{video_id} delete lambda deploy zip
         uses: kinlane/blueprints@main
         with:
