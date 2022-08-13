@@ -56,7 +56,7 @@ jobs:
             aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
             aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             aws_region: us-west-1
-            function_name: m-s-blueprints-blueprint-put
+            function_name: m-s-blueprints-blueprint-pu
             zip_file: m-s-blueprints-blueprint-g.zip
       - name: /blueprints/{blueprint_id} put lambda deploy zip
         uses: kinlane/blueprints@main
