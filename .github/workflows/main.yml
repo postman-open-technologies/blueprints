@@ -97,15 +97,15 @@ jobs:
       - name: /blueprints/{blueprint_id}/answers post lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-answer-po.zip /blueprints/blueprint_id/answers/post/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-answers-po.zip /blueprints/blueprint_id/answers/post/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
             aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
             aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             aws_region: us-west-1
-            function_name: m-s-blueprints-blueprint-answer-po
-            zip_file: m-s-blueprints-blueprint-answer-po.zip
+            function_name: m-s-blueprints-blueprint-answers-po
+            zip_file: m-s-blueprints-blueprint-answers-po.zip
       - name: /blueprints/{blueprint_id}/answers/{answer_id} delete lambda deploy zip
         uses: kinlane/blueprints@main
         with:
