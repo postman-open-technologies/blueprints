@@ -2,7 +2,7 @@ name: Blueprints
 on: [push]
 jobs:
   deploy_source:
-    name: Deploy API to Lambda
+    name: Deploy API Using Lambda
     strategy:
       matrix:
         node-version: [12.x]
