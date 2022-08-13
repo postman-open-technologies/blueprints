@@ -37,15 +37,15 @@ jobs:
       - name: /blueprints post lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprint-po.zip /blueprints/post/index.js node_modules
+            args: zip -qq -r m-s-blueprints-po.zip /blueprints/post/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
             aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
             aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             aws_region: us-west-1
-            function_name: m-s-blueprint-po
-            zip_file: m-s-blueprint-po.zip
+            function_name: m-s-blueprints-po
+            zip_file: m-s-blueprints-po.zip
       - name: /blueprints/{blueprint_id} get lambda deploy zip
         uses: kinlane/blueprints@main
         with:
