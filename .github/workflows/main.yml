@@ -25,7 +25,7 @@ jobs:
       - name: /blueprints get lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-g.zip /blueprints/get/index.js node_modules
+            args: zip -qq -r m-s-blueprints-g.zip blueprints/get/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -37,7 +37,7 @@ jobs:
       - name: /blueprints post lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-po.zip /blueprints/post/index.js node_modules
+            args: zip -qq -r m-s-blueprints-po.zip blueprints/post/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -49,7 +49,7 @@ jobs:
       - name: /blueprints/{blueprint_id} get lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-g.zip /blueprints/blueprint_id/get/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-g.zip blueprints/blueprint_id/get/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -61,7 +61,7 @@ jobs:
       - name: /blueprints/{blueprint_id} put lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-pu.zip /blueprints/blueprint_id/put/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-pu.zip blueprints/blueprint_id/put/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -73,7 +73,7 @@ jobs:
       - name: /blueprints/{blueprint_id} delete lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-d.zip /blueprints/blueprint_id/delete/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-d.zip blueprints/blueprint_id/delete/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -85,7 +85,7 @@ jobs:
       - name: /blueprints/{blueprint_id}/answers get lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-answers-g.zip /blueprints/blueprint_id/answers/get/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-answers-g.zip blueprints/blueprint_id/answers/get/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -97,7 +97,7 @@ jobs:
       - name: /blueprints/{blueprint_id}/answers post lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-answers-po.zip /blueprints/blueprint_id/answers/post/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-answers-po.zip blueprints/blueprint_id/answers/post/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -109,7 +109,7 @@ jobs:
       - name: /blueprints/{blueprint_id}/answers/{answer_id} delete lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-answers-answer-d.zip /blueprints/blueprint_id/answers/answer_id/delete/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-answers-answer-d.zip blueprints/blueprint_id/answers/answer_id/delete/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -121,7 +121,7 @@ jobs:
       - name: /blueprints/{blueprint_id}/areas get lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-areas-g.zip /blueprints/blueprint_id/areas/get/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-areas-g.zip blueprints/blueprint_id/areas/get/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -133,7 +133,7 @@ jobs:
       - name: /blueprints/{blueprint_id}/areas post lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-areas-po.zip /blueprints/blueprint_id/areas/post/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-areas-po.zip blueprints/blueprint_id/areas/post/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -145,7 +145,7 @@ jobs:
       - name: /blueprints/{blueprint_id}/areas/{area_id} put lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-areas-area-pu.zip /blueprints/blueprint_id/areas/area_id/put/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-areas-area-pu.zip blueprints/blueprint_id/areas/area_id/put/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -157,7 +157,7 @@ jobs:
       - name: /blueprints/{blueprint_id}/areas/{area_id} delete lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-areas-area-d.zip /blueprints/blueprint_id/areas/area_id/delete/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-areas-area-d.zip blueprints/blueprint_id/areas/area_id/delete/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -169,7 +169,7 @@ jobs:
       - name: /blueprints/{blueprint_id}/areas/{area_id}/elements get lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-areas-area-elements-g.zip /blueprints/blueprint_id/areas/area_id/elements/get/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-areas-area-elements-g.zip blueprints/blueprint_id/areas/area_id/elements/get/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -181,7 +181,7 @@ jobs:
       - name: /blueprints/{blueprint_id}/areas/{area_id}/elements post lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-areas-area-elements-po.zip /blueprints/blueprint_id/areas/area_id/elements/post/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-areas-area-elements-po.zip blueprints/blueprint_id/areas/area_id/elements/post/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -193,7 +193,7 @@ jobs:
       - name: /blueprints/{blueprint_id}/areas/{area_id}/elements/{element_id} delete lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-areas-area-elements-element-d.zip /blueprints/blueprint_id/areas/area_id/elements/element_id/delete/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-areas-area-elements-element-d.zip blueprints/blueprint_id/areas/area_id/elements/element_id/delete/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -205,7 +205,7 @@ jobs:
       - name: /blueprints/{blueprint_id}/links get lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-links-g.zip /blueprints/blueprint_id/links/get/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-links-g.zip blueprints/blueprint_id/links/get/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -217,7 +217,7 @@ jobs:
       - name: /blueprints/{blueprint_id}/links post lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-links-po.zip /blueprints/blueprint_id/links/post/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-links-po.zip blueprints/blueprint_id/links/post/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -229,7 +229,7 @@ jobs:
       - name: /blueprints/{blueprint_id}/links/{link_id} delete lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-links-link-d.zip /blueprints/blueprint_id/links/link_id/delete/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-links-link-d.zip blueprints/blueprint_id/links/link_id/delete/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -241,7 +241,7 @@ jobs:
       - name: /blueprints/{blueprint_id}/questions get lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-questions-g.zip /blueprints/blueprint_id/questions/get/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-questions-g.zip blueprints/blueprint_id/questions/get/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -253,7 +253,7 @@ jobs:
       - name: /blueprints/{blueprint_id}/questions post lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-questions-po.zip /blueprints/blueprint_id/questions/post/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-questions-po.zip blueprints/blueprint_id/questions/post/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -265,7 +265,7 @@ jobs:
       - name: /blueprints/{blueprint_id}/questions/{question_id} delete lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-questions-question-d.zip /blueprints/blueprint_id/questions/question_id/delete/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-questions-question-d.zip blueprints/blueprint_id/questions/question_id/delete/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -277,7 +277,7 @@ jobs:
       - name: /blueprints/{blueprint_id}/roles get lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-roles-g.zip /blueprints/blueprint_id/roles/get/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-roles-g.zip blueprints/blueprint_id/roles/get/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -289,7 +289,7 @@ jobs:
       - name: /blueprints/{blueprint_id}/roles post lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-roles-po.zip /blueprints/blueprint_id/roles/post/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-roles-po.zip blueprints/blueprint_id/roles/post/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -301,7 +301,7 @@ jobs:
       - name: /blueprints/{blueprint_id}/roles/{role_id} delete lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-roles-role-d.zip /blueprints/blueprint_id/roles/role_id/delete/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-roles-role-d.zip blueprints/blueprint_id/roles/role_id/delete/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -313,7 +313,7 @@ jobs:
       - name: /blueprints/{blueprint_id}/tags get lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-tags-g.zip /blueprints/blueprint_id/tags/get/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-tags-g.zip blueprints/blueprint_id/tags/get/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -325,7 +325,7 @@ jobs:
       - name: /blueprints/{blueprint_id}/tags post lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-tags-po.zip /blueprints/blueprint_id/tags/post/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-tags-po.zip blueprints/blueprint_id/tags/post/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -337,7 +337,7 @@ jobs:
       - name: /blueprints/{blueprint_id}/tags/{tag_id} delete lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-tags-tag-d.zip /blueprints/blueprint_id/tags/tag_id/delete/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-tags-tag-d.zip blueprints/blueprint_id/tags/tag_id/delete/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -349,7 +349,7 @@ jobs:
       - name: /blueprints/{blueprint_id}/videos get lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-videos-g.zip /blueprints/blueprint_id/videos/get/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-videos-g.zip blueprints/blueprint_id/videos/get/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -361,7 +361,7 @@ jobs:
       - name: /blueprints/{blueprint_id}/videos post lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-videos-po.zip /blueprints/blueprint_id/videos/post/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-videos-po.zip blueprints/blueprint_id/videos/post/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
@@ -373,7 +373,7 @@ jobs:
       - name: /blueprints/{blueprint_id}/videos/{video_id} delete lambda deploy zip
         uses: kinlane/blueprints@main
         with:
-            args: zip -qq -r m-s-blueprints-blueprint-videos-video-d.zip /blueprints/blueprint_id/videos/video_id/delete/index.js node_modules
+            args: zip -qq -r m-s-blueprints-blueprint-videos-video-d.zip blueprints/blueprint_id/videos/video_id/delete/index.js node_modules
       - name: blueprints get lambda deploy
         uses: appleboy/lambda-action@master
         with:
