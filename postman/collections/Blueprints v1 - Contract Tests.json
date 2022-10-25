@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "684f3d46-6ce0-440f-8020-109212c7c7a8",
+		"name": "Blueprints v1 - Contract Tests",
+		"description": "This is of the blueprints API.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "12959542-684f3d46-6ce0-440f-8020-109212c7c7a8"
+	},
+	"item": [
+		{
+			"name": "Get Blueprints",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "395f75ba-a291-41a5-a60b-6d6ff490720b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "3ad856ed-4320-49a8-b61c-870e60a18273",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/blueprints?limit=25&page=0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"blueprints"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "25"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						}
+					]
+				},
+				"description": "Gets all blueprints."
+			},
+			"response": [
+				{
+					"id": "ec026d9e-5e39-4522-8689-5806f6bd6784",
+					"name": "Get Blueprints",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/blueprints?limit=25&page=0",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"blueprints"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "25"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "{{api_key}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "x-api-key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "3ded228f-3fe4-4b1d-bd05-13da769c9e50",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "0552f776-dc74-4c28-a47d-54e9890ffab3",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "27a5f42d-32a5-4518-ad05-e0fdb84483ce",
+			"key": "base_url",
+			"value": "https://lok608s285.execute-api.us-east-1.amazonaws.com/staging",
+			"type": "string"
+		}
+	]
+}

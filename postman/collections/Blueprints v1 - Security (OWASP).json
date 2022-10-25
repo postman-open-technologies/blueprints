@@ -1,0 +1,469 @@
+{
+	"info": {
+		"_postman_id": "2ddb3b86-7c5d-4345-9f2f-3894cbb594d5",
+		"name": "Blueprints v1 - Security (OWASP)",
+		"description": "This is an API for managing the reviews of the restaurant.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "12959542-2ddb3b86-7c5d-4345-9f2f-3894cbb594d5"
+	},
+	"item": [
+		{
+			"name": "Broken object level authorization",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5fc08812-90ad-4056-8c20-ea6d9b95b336",
+						"exec": [
+							"pm.test(\"Broken object level authorization\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "819d9927-8ee9-4585-b324-80d7196a6c19",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/blueprints?limit=25&page=0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"blueprints"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "25"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Broken authentication",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "324b4647-61bd-4339-82b8-da74d5e287a7",
+						"exec": [
+							"pm.test(\"Broken authentication\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "87748a45-a4ed-4930-a5fb-efe2f9083eb6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/blueprints?limit=25&page=0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"blueprints"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "25"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Excessive data exposure",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "522b7119-120b-44b3-a793-d3b94e865176",
+						"exec": [
+							"pm.test(\"Excessive data exposure\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "f45a30ba-8b08-40ea-a06d-44f130def96c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/blueprints?limit=25&page=0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"blueprints"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "25"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lack of resources and rate limiting",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3757c2d4-3bbd-477d-8942-88b652520770",
+						"exec": [
+							"pm.test(\"Lack of resources and rate limiting\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "7338d10f-0522-4dbd-a3d8-4f42d12f27eb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/blueprints?limit=25&page=0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"blueprints"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "25"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Broken function level authorization",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9eb51424-b23d-4f18-812d-45a3f3af2c33",
+						"exec": [
+							"pm.test(\"Broken function level authorization\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "1afc97a0-5e8a-4516-a785-d7f575e0f2f4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/blueprints?limit=25&page=0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"blueprints"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "25"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mass assignment",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2c80f98f-a8aa-4a13-937d-178954d0e444",
+						"exec": [
+							"pm.test(\"Mass assignment\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "742d6700-01ca-402b-b950-dfc411190d31",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/blueprints?limit=25&page=0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"blueprints"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "25"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Security misconfiguration",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4f96e159-ba16-4d2b-b11a-35dfded863d0",
+						"exec": [
+							"pm.test(\"Security misconfiguration\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "fd45c55d-305e-4515-beee-62cb8c1955d8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/blueprints?limit=25&page=0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"blueprints"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "25"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Injection",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f2786ccd-87a8-47ee-992c-1bc57bc29624",
+						"exec": [
+							"pm.test(\"Injection\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "2d27b221-224d-4e3f-ad75-7dc6c48db962",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/blueprints?limit=25&page=0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"blueprints"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "25"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Improper assets management",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3a883dac-e963-4c5f-bf4d-1fa026222f7d",
+						"exec": [
+							"pm.test(\"Improper assets management\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "bad88e71-76a5-4eb9-9357-044a7e274900",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/blueprints?limit=25&page=0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"blueprints"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "25"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insufficient logging and monitoring",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "71adfc34-93e9-4048-ad28-30177fafbc0e",
+						"exec": [
+							"pm.test(\"Insufficient logging and monitoring\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "dab2ab82-be3c-467b-93e8-a5640584c3b9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/blueprints?limit=25&page=0",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"blueprints"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "25"
+						},
+						{
+							"key": "page",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "2176893f-3e08-4af2-afbc-b386ff7a5475",
+			"key": "baseUrl",
+			"value": "{{baseUrl}}",
+			"type": "string"
+		}
+	]
+}
