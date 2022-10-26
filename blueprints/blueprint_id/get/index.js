@@ -14,7 +14,8 @@ exports.handler = vandium.generic()
     var sql = 'SELECT * FROM blueprints WHERE id = ' + connection.escape(event.blueprint_id);
     connection.query(sql, function (error, results, fields) {
 
-    callback( null, results );
+    callback( null, results[0] );
 
   });
+  connection.end();
 });

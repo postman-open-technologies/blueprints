@@ -17,4 +17,5 @@ exports.handler = vandium.generic()
     callback( null, sql );
 
   });
+  connection.end();
 });
