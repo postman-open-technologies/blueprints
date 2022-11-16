@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "2ddb3b86-7c5d-4345-9f2f-3894cbb594d5",
+		"_postman_id": "946075eb-f12f-4880-8de7-c49507c0c750",
 		"name": "Blueprints v1 - Security (OWASP)",
 		"description": "This is an API for managing the reviews of the restaurant.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "12959542-2ddb3b86-7c5d-4345-9f2f-3894cbb594d5"
+		"_uid": "12959542-946075eb-f12f-4880-8de7-c49507c0c750"
 	},
 	"item": [
 		{
@@ -13,7 +13,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "5fc08812-90ad-4056-8c20-ea6d9b95b336",
+						"id": "5f46c6bb-3c57-4248-9561-25de64a53273",
 						"exec": [
 							"pm.test(\"Broken object level authorization\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -23,7 +23,7 @@
 					}
 				}
 			],
-			"id": "819d9927-8ee9-4585-b324-80d7196a6c19",
+			"id": "2cce9c7d-8e2a-4ea9-b194-e8ae1c091d01",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -58,7 +58,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "324b4647-61bd-4339-82b8-da74d5e287a7",
+						"id": "160e317e-27e1-424c-a518-2b7f2156e8f4",
 						"exec": [
 							"pm.test(\"Broken authentication\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -68,7 +68,7 @@
 					}
 				}
 			],
-			"id": "87748a45-a4ed-4930-a5fb-efe2f9083eb6",
+			"id": "fa8be7ca-b3ac-4e98-bdc9-735bcabf4f06",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -103,7 +103,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "522b7119-120b-44b3-a793-d3b94e865176",
+						"id": "556ca5b4-ed4a-4c9a-a6a8-ba8b2ed8aac0",
 						"exec": [
 							"pm.test(\"Excessive data exposure\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -113,7 +113,7 @@
 					}
 				}
 			],
-			"id": "f45a30ba-8b08-40ea-a06d-44f130def96c",
+			"id": "29725d9e-8ee0-4feb-a096-b9568dc21e06",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -148,7 +148,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "3757c2d4-3bbd-477d-8942-88b652520770",
+						"id": "76695d24-2538-4886-8338-110c74ca7da9",
 						"exec": [
 							"pm.test(\"Lack of resources and rate limiting\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -158,7 +158,7 @@
 					}
 				}
 			],
-			"id": "7338d10f-0522-4dbd-a3d8-4f42d12f27eb",
+			"id": "4e70e1b9-ba69-4281-8435-e972693b71dd",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -193,7 +193,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "9eb51424-b23d-4f18-812d-45a3f3af2c33",
+						"id": "4c2cfb1d-70c0-410d-b615-b9b7e954717d",
 						"exec": [
 							"pm.test(\"Broken function level authorization\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -203,7 +203,7 @@
 					}
 				}
 			],
-			"id": "1afc97a0-5e8a-4516-a785-d7f575e0f2f4",
+			"id": "e2cda9e3-4d0a-4848-b79e-e64ba1af3a10",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -238,7 +238,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "2c80f98f-a8aa-4a13-937d-178954d0e444",
+						"id": "b45019c5-f12a-4509-b509-d48ec436c4b0",
 						"exec": [
 							"pm.test(\"Mass assignment\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -248,7 +248,7 @@
 					}
 				}
 			],
-			"id": "742d6700-01ca-402b-b950-dfc411190d31",
+			"id": "28b6fbcb-1412-4a2d-a8a4-f5d3b08da066",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -283,7 +283,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "4f96e159-ba16-4d2b-b11a-35dfded863d0",
+						"id": "9afd2bc0-470f-4a0d-a1a5-95a7a50bd0f0",
 						"exec": [
 							"pm.test(\"Security misconfiguration\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -293,7 +293,7 @@
 					}
 				}
 			],
-			"id": "fd45c55d-305e-4515-beee-62cb8c1955d8",
+			"id": "9e2e4705-f519-470f-937f-29cb988e607e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -328,7 +328,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "f2786ccd-87a8-47ee-992c-1bc57bc29624",
+						"id": "6ece5e70-bb8b-4e0f-951e-3b3ff49ad516",
 						"exec": [
 							"pm.test(\"Injection\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -338,7 +338,7 @@
 					}
 				}
 			],
-			"id": "2d27b221-224d-4e3f-ad75-7dc6c48db962",
+			"id": "0e2017a2-19e7-454f-9878-930a3bd4fa8a",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -373,7 +373,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "3a883dac-e963-4c5f-bf4d-1fa026222f7d",
+						"id": "c2c5595c-c446-4b41-ab0d-37a796979e42",
 						"exec": [
 							"pm.test(\"Improper assets management\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -383,7 +383,7 @@
 					}
 				}
 			],
-			"id": "bad88e71-76a5-4eb9-9357-044a7e274900",
+			"id": "2378e094-1c47-426d-9031-62baf663eed8",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -418,7 +418,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "71adfc34-93e9-4048-ad28-30177fafbc0e",
+						"id": "f4d9c4f7-2dc7-4710-ac5b-61c19d85c71a",
 						"exec": [
 							"pm.test(\"Insufficient logging and monitoring\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -428,7 +428,7 @@
 					}
 				}
 			],
-			"id": "dab2ab82-be3c-467b-93e8-a5640584c3b9",
+			"id": "553da03b-47ad-42b5-8ea5-8fa8fe9352d2",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},

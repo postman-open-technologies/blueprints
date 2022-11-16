@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "684f3d46-6ce0-440f-8020-109212c7c7a8",
+		"_postman_id": "33fddd4f-2dd3-49f4-969b-bb5b0a06ace4",
 		"name": "Blueprints v1 - Contract Tests",
 		"description": "This is of the blueprints API.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "12959542-684f3d46-6ce0-440f-8020-109212c7c7a8"
+		"_uid": "12959542-33fddd4f-2dd3-49f4-969b-bb5b0a06ace4"
 	},
 	"item": [
 		{
@@ -13,7 +13,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "395f75ba-a291-41a5-a60b-6d6ff490720b",
+						"id": "9c746b57-284f-4886-bd45-6839532e9b3a",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -23,7 +23,7 @@
 					}
 				}
 			],
-			"id": "3ad856ed-4320-49a8-b61c-870e60a18273",
+			"id": "845ebcb6-292e-43b9-af82-741a158abd36",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -58,7 +58,7 @@
 			},
 			"response": [
 				{
-					"id": "ec026d9e-5e39-4522-8689-5806f6bd6784",
+					"id": "670dc18b-fed4-45be-8df7-550b025a95bb",
 					"name": "Get Blueprints",
 					"originalRequest": {
 						"method": "GET",
@@ -89,6 +89,7 @@
 						}
 					},
 					"_postman_previewlanguage": "Text",
+					"_postman_previewtype": "html",
 					"header": null,
 					"cookie": [],
 					"body": null
@@ -115,7 +116,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "3ded228f-3fe4-4b1d-bd05-13da769c9e50",
+				"id": "ed355cf4-2113-4e87-a223-b4acb64efb8d",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -125,7 +126,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "0552f776-dc74-4c28-a47d-54e9890ffab3",
+				"id": "e56b4003-5908-45c0-b5c8-27e1e57f3545",
 				"type": "text/javascript",
 				"exec": [
 					""

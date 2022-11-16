@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "9ef429b3-31e7-493a-a410-ec67c9178c29",
+		"_postman_id": "a136f8fc-02a5-459d-91d4-a45ae8fb1856",
 		"name": "Blueprints v1 - Performance",
 		"description": "This is of the blueprints API.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "12959542-9ef429b3-31e7-493a-a410-ec67c9178c29"
+		"_uid": "12959542-a136f8fc-02a5-459d-91d4-a45ae8fb1856"
 	},
 	"item": [
 		{
@@ -13,7 +13,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "0a2d35d2-deea-45b7-9e96-48f4913b1432",
+						"id": "36fbcc2d-d7be-414b-bc94-b5638e127559",
 						"exec": [
 							"pm.test(\"Response time is less than 500ms\", function () {",
 							"    pm.expect(pm.response.responseTime).to.be.below(1000);",
@@ -23,7 +23,7 @@
 					}
 				}
 			],
-			"id": "6f862541-73e2-4963-bc31-996b726551f1",
+			"id": "ca240919-350d-47e6-9487-a52b19188551",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -103,7 +103,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "f8c928c2-4f22-41ba-ad35-fb877d7444a7",
+				"id": "4b7427b1-956c-47f5-9726-b86c1680ecd4",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -113,7 +113,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "4e227afa-139d-41dc-b96d-2b3ec96ab178",
+				"id": "c9f30d6c-51f3-40e9-bfdc-3b4e7dc683c6",
 				"type": "text/javascript",
 				"exec": [
 					""
