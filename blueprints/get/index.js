@@ -35,14 +35,17 @@ exports.handler = vandium.generic()
     if(event.limit){
       limit = event.limit;
     }   
-    if(limit > 25){
-      limit = 25;
+    if(limit > 1000){
+      limit = 1000;
     }
 
     var sql = "SELECT * FROM blueprints b WHERE id IS NOT NULL";
     if(search != ''){
        sql += " AND b.name LIKE '%" + search + "%'";
     }
+    if(event.rating && event.rating !='' && event.rating !='0'){
+       sql += " AND b.rating >= " + event.rating;
+    }    
     if(role != ''){
        sql += " AND id IN(SELECT blueprint_id FROM blueprints_roles WHERE role_id IN(SELECT id FROM roles WHERE name = '" + role + "'))";
     }   
@@ -50,7 +53,7 @@ exports.handler = vandium.generic()
        sql += " AND id IN(SELECT blueprint_id FROM blueprints_tags WHERE tag_id IN(SELECT id FROM tags WHERE name IN ('" + tags.replace(",","','") + "')))";
     }     
     sql += " ORDER BY Level";
-    sql += " LIMIT " + event.page + "," + event.limit;
+    sql += " LIMIT " + page + "," + limit;
     connection.query(sql, function (error, results, fields) {
 
     callback( null, results );

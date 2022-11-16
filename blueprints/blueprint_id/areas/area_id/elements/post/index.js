@@ -11,42 +11,37 @@ exports.handler = vandium.generic()
     database : process.env.database
     });
 
-    var sql = 'INSERT INTO blueprints_areas_elements(blueprints_areas_id,';
-    
-    var total_properties = Object.keys(event.body).length;
-    
-    var property_count = 1;
-    for (const [key, value] of Object.entries(event.body)) {
-      sql += key;
-      if(property_count != total_properties){
-        sql += ',';
-      }
-      property_count++;
-    }
+    var sql = "SELECT * FROM blueprints_areas_elements WHERE blueprints_areas_id = " + event.area_id + " AND element_id = " + event.body.element_id;
+    connection.query(sql, function (error, results, fields) {    
+
+      if(results.length == 0){
+          
+        var sql = 'INSERT INTO blueprints_areas_elements(blueprints_areas_id,element_id,description)';
+        sql += " VALUES(" + event.area_id + "," + event.body.element_id + ",'" + event.body.description + "')";
+        connection.query(sql, function (error, results, fields) {
       
-    sql += ')';
+          var response = {};
+          response['id'] = results.insertId;
+          response['name'] = event.name;
+          response['description'] = event.body.description;
 
-    sql += ' VALUES(' + event.area_id + ',';
-    
-    var property_count = 1;
-    for (const [key, value] of Object.entries(event.body)) {
-      sql += connection.escape(value);
-      if(property_count != total_properties){
-        sql += ',';
+          callback( null, response );
+
+        });
+
       }
-      property_count++;
-    }
+      else{
+        
+        var element_id = results[0].id;
 
-    sql += ")";
-  
-    connection.query(sql, function (error, results, fields) {
-  
-      var response = {};
-      response['id'] = event.id;
-      response['name'] = event.name;
+        var response = {};
+        response['id'] = element_id;
+        response['name'] = event.name;
+        response['description'] = event.description;
 
-      callback( null, error );
+        callback( null, response );        
+
+      }
 
     });
-    connection.end();
 });

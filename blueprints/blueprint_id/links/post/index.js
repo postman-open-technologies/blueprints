@@ -17,8 +17,10 @@ exports.handler = vandium.generic()
 
       var sql = "SELECT * FROM blueprints_links WHERE blueprint_id = " + event.blueprint_id + " and link_id = " + event.body.link_id + " LIMIT 1";
       connection.query(sql, function (err, result, fields) {
-        if(result.length > 0){
+        if (err) throw err;
+        if(result && result.length > 0){
           callback( null, result[0] ); 
+          connection.end();
         }
         else{
 
@@ -32,12 +34,11 @@ exports.handler = vandium.generic()
             inserted.link_id = event.link_id;
         
             callback( null, inserted );
+            connection.end();
       
           });          
 
         }
       });
     });
-    connection.end();
-
 });
