@@ -202,6 +202,20 @@ jobs:
             aws_region: us-west-1
             function_name: m-s-blueprints-blueprint-areas-area-elements-element-d
             zip_file: m-s-blueprints-blueprint-areas-area-elements-element-d.zip
+
+      - name: /blueprints/{blueprint_id}/areas/{area_id}/elements/{element_id} put lambda deploy zip
+        uses: kinlane/blueprints@main
+        with:
+            args: zip -qq -r m-s-blueprints-blueprint-areas-area-elements-element-pu.zip blueprints/blueprint_id/areas/area_id/elements/element_id/put/index.js node_modules
+      - name: blueprints get lambda deploy
+        uses: appleboy/lambda-action@master
+        with:
+            aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+            aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+            aws_region: us-west-1
+            function_name: m-s-blueprints-blueprint-areas-area-elements-element-pu
+            zip_file: m-s-blueprints-blueprint-areas-area-elements-element-pu.zip
+
       - name: /blueprints/{blueprint_id}/links get lambda deploy zip
         uses: kinlane/blueprints@main
         with:
